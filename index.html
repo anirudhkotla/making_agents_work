@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacknovate'2025 Feedback Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Hacknovate'2025 Feedback Form</h1>
+        <h1><i class="fas fa-rocket"></i> Hacknovate'2025 Feedback</h1>
         <form id="feedbackForm">
             <div class="form-group">
-                <label for="participantName">Name of the Participant:</label>
-                <input type="text" id="participantName" name="participantName" required>
+                <label for="name"><i class="fas fa-user"></i> Participant Name:</label>
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="teamName">Team Name:</label>
-                <input type="text" id="teamName" name="teamName" required>
+                <label for="team"><i class="fas fa-users"></i> Team Name:</label>
+                <input type="text" id="team" name="team" required>
             </div>
             <div class="form-group">
-                <label for="venueReview">Review about Venue:</label>
-                <textarea id="venueReview" name="venueReview" required></textarea>
+                <label for="venue"><i class="fas fa-map-marker-alt"></i> Venue Review:</label>
+                <textarea id="venue" name="venue" required></textarea>
             </div>
             <div class="form-group">
-                <label for="foodReview">Review about Food:</label>
-                <textarea id="foodReview" name="foodReview" required></textarea>
+                <label for="food"><i class="fas fa-utensils"></i> Food Review:</label>
+                <textarea id="food" name="food" required></textarea>
             </div>
             <div class="form-group">
-                <label for="judgesReview">Review about Judges:</label>
-                <textarea id="judgesReview" name="judgesReview" required></textarea>
+                <label for="judges"><i class="fas fa-gavel"></i> Judges Review:</label>
+                <textarea id="judges" name="judges" required></textarea>
             </div>
             <div class="form-group">
-                <label for="overallExperience">Overall Experience:</label>
-                <textarea id="overallExperience" name="overallExperience" required></textarea>
+                <label for="experience"><i class="fas fa-star"></i> Overall Experience:</label>
+                <textarea id="experience" name="experience" required></textarea>
             </div>
-            <button type="submit">Submit Feedback</button>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
         </form>
     </div>
     <script src="script.js"></script>
