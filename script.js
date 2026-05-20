@@ -1,20 +1,17 @@
 document.getElementById('feedbackForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    // Hide the form
-    document.getElementById('feedbackForm').style.display = 'none';
-    
-    // Show thank you message
-    document.getElementById('thankYouMessage').classList.remove('hidden');
-    
-    // Here you would typically send the form data to a server
-    // For this example, we'll just log it to the console
     const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        rating: document.getElementById('rating').value,
-        comments: document.getElementById('comments').value
+        participantName: document.getElementById('participantName').value,
+        teamName: document.getElementById('teamName').value,
+        venueReview: document.getElementById('venueReview').value,
+        foodReview: document.getElementById('foodReview').value,
+        judgesReview: document.getElementById('judgesReview').value,
+        overallExperience: document.getElementById('overallExperience').value
     };
     
     console.log('Form submitted:', formData);
+    alert('Thank you for your feedback!');
+    
+    // Here you can add code to send the form data to a server
 });
