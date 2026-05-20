@@ -1,17 +1,20 @@
-document.getElementById('feedbackForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+    e.preventDefault();
     
-    const formData = {
-        participantName: document.getElementById('participantName').value,
-        teamName: document.getElementById('teamName').value,
-        venueReview: document.getElementById('venueReview').value,
-        foodReview: document.getElementById('foodReview').value,
-        judgesReview: document.getElementById('judgesReview').value,
-        overallExperience: document.getElementById('overallExperience').value
-    };
+    // Get form values
+    const name = document.getElementById('name').value;
+    const team = document.getElementById('team').value;
+    const venue = document.getElementById('venue').value;
+    const food = document.getElementById('food').value;
+    const judges = document.getElementById('judges').value;
+    const experience = document.getElementById('experience').value;
     
-    console.log('Form submitted:', formData);
+    // Here you would typically send the data to a server
+    console.log('Feedback submitted:', { name, team, venue, food, judges, experience });
+    
+    // Show success message
     alert('Thank you for your feedback!');
     
-    // Here you can add code to send the form data to a server
+    // Reset form
+    this.reset();
 });
